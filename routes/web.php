@@ -5,7 +5,7 @@ use App\Http\Controllers\BarbeariaController;
 
 
 
-Route::get('/', [App\Http\Controllers\BarbeariaController::class, 'index'])->name('barbearias.index');
+Route::get('/', [App\Http\Controllers\BarbeariaController::class, 'index'])->name('pages.index');
 
 
 

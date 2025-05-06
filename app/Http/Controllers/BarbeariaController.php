@@ -21,6 +21,6 @@ class BarbeariaController extends Controller
         $barbearias = $query->get();
 
         // Retorna a view com as barbearias
-        return view('barbearias.index', compact('barbearias'));
+        return view('pages.index', compact('barbearias'));
     }
 }
