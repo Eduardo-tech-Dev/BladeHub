@@ -10,7 +10,7 @@ input.addEventListener('input', function () {
     timeout = setTimeout(() => {
         const query = input.value;
 
-        fetch(`/barbearias?search=${encodeURIComponent(query)}`)
+        fetch(`/?search=${encodeURIComponent(query)}`)
             .then(res => res.text())
             .then(html => {
                 // Extrai apenas a parte dos cards da resposta HTML
