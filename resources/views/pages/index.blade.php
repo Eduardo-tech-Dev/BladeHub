@@ -11,8 +11,8 @@
             <p class="text-xl text-gray-300 mt-6 mb-8 max-w-2xl mx-auto">
                 Descubra as melhores barbearias e serviços de beleza na sua região.
             </p>
-            <button onclick="document.getElementById('barbearias').scrollIntoView({ behavior: 'smooth' });"
-                class="bg-[#d19f68] hover:bg-[#c08c55] text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-300">
+            <button onclick="scrollToAnchor('barbearias')"
+                class="bg-[#d19f68] hover:bg-[#c08c55] text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-300 cursor-pointer">
                 <span>Ver barbearias</span>
                 <ion-icon name="chevron-down-outline"></ion-icon>
             </button>
@@ -35,4 +35,6 @@
 
 @push('scripts')
     @vite('resources/js/update_search.js')
+    @vite('resources/js/scroll.js')
 @endpush
+
