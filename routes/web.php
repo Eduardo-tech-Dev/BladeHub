@@ -9,3 +9,7 @@ Route::get('/', [App\Http\Controllers\BarbeariaController::class, 'index'])->nam
 
 
 
+Route::get('/login', function () {
+    return view('pages.login');
+});
+
